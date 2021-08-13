@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#one").click(function(){
+            $("#one").attr("src", "img/cat0.png");
+        });
+            $("#two").click(function(){
+            $("#two").attr("src", "img/cat1.png");
+        });
+            $("#three").click(function(){
+            $("#three").attr("src", "img/cat2.png");
+        });
+            $("#four").click(function(){
+            $("#four").attr("src", "img/cat3.png");
+        });
+            $("#five").click(function(){
+            $("#five").attr("src", "img/cat4.png");
+        });
+            $("button").click(function(){
+            $("#one").attr("src", "img/ninja0.png");
+        });
+            $("button").click(function(){
+            $("#two").attr("src", "img/ninja1.png");
+        });
+            $("button").click(function(){
+            $("#three").attr("src", "img/ninja2.png");
+        });
+            $("button").click(function(){
+            $("#four").attr("src", "img/ninja3.png");
+        });
+            $("button").click(function(){
+            $("#five").attr("src", "img/ninja4.png");
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Ninja to Cat</h1>
+        </div>
+        <div class="body">
+            <img id="one" src="img/ninja0.png" alt="ninja0">
+            <img id="two" src="img/ninja1.png" alt="ninja1">
+            <img id="three" src="img/ninja2.png" alt="ninja2">
+            <img id="four" src="img/ninja3.png" alt="ninja3">
+            <img id="five" src="img/ninja4.png" alt="ninja4">
+        </div>
+        <div class="footer">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Reset Images</button>
+        </div>
+    </div>
+</body>
+</html>
