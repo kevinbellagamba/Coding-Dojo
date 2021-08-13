@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#cursive').click(function(){
+                $('#change').css('font-family', 'Yellowtail');
+            });
+
+            $('#standard').click(function(){
+                $('#change').css('font-family', 'Arial');
+            });
+
+            $('#hide').click(function(){
+                $('h1').hide();
+            })
+
+            $('#show').click(function(){
+                $('h1').show();
+            })
+
+            $('#toggle').click(function(){
+                $('.hideshow').toggle();
+            })
+
+            $('#stoggle').click(function(){
+                $('h1').slideToggle();
+            });
+
+            $('img').click(function(){
+                $('img').fadeOut();
+            });
+
+            $('#return').click(function(){
+                $('img').fadeIn();
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Functions</h1>
+        <div class= "click">
+            <h2>Click to Change</h2>
+            <button id="cursive">
+                Change
+            </button>
+            <button id="standard">
+                Reset
+            </button>
+            <p id="change">
+                Click this button to change the font to cursive
+            </p>
+        </div>   
+        <div class="hideshow">
+            <h2>Hide and Show</h2>
+            <button id="hide">
+                Hide
+            </button>
+            <button id="show">
+                Show
+            </button>
+            <p>
+                This button hides and shows the title
+            </p>
+        </div> 
+        <div class="toggle">
+            <h2>Toggle</h2>
+            <button id="toggle">
+                Toggle
+            </button>
+            <p>
+                This button toggles the previous section
+            </p>
+        </div>
+        <div class="slideToggle">
+            <h2>Slide Toggle</h2>
+            <p id="stoggle">                
+                Click this text to slide toggle the title
+            </p>
+        </div>
+        <div class= "fade">
+            <h2>Fade In and Out</h2>
+            <p>Click on the image of the globe to make it disappear</p>
+            <img index="globe" src="globe.png" alt="globe">
+            <button id="return">
+                Return
+            </button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
