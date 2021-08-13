@@ -1,0 +1,8 @@
+div {
+    width: 450px;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    column-width: 80px;
+}
