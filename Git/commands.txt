@@ -1,0 +1,125 @@
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop (master)
+$ mkdir basic_repo
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop (master)
+$ cd basic_repo
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ touch index.html
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ touch style.css
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git init
+Initialized empty Git repository in C:/Users/Kevin/Desktop/basic_repo/.git/
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "first commit"
+[master (root-commit) fd782c2] first commit
+ 2 files changed, 17 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "added/styled container"
+[master c357cbd] added/styled container
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git log
+commit c357cbd554fd9554f27888682f6ea1fa58718acd (HEAD -> master)
+Author: kevinbellagamba <bellagamba.ke@gmail.com>
+Date:   Wed Jun 2 01:15:27 2021 -0400
+
+    added/styled container
+
+commit fd782c24c0466d758e33e18159bc56b49aec0bc7
+Author: kevinbellagamba <bellagamba.ke@gmail.com>
+Date:   Wed Jun 2 01:13:36 2021 -0400
+
+    first commit
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git remote add origin https://github.com/kevinbellagamba/basic_repo.git
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 945 bytes | 945.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/kevinbellagamba/basic_repo.git
+ * [new branch]      master -> master
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "added header"
+[master e569185] added header
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git remote add origin https://github.com/kevinbellagamba/basic_repo.git
+error: remote origin already exists.
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 449 bytes | 449.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kevinbellagamba/basic_repo.git
+   c357cbd..e569185  master -> master
+
+Kevin@DESKTOP-I26RRL9 MINGW64 ~/Desktop/basic_repo (master)
+$ touch commands.txt
