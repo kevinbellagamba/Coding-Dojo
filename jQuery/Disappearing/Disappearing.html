@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        $(document).ready(function() {
+
+            $('img').click(function(){
+                $(this).fadeOut();
+            });
+
+            $('#show').click(function(){
+                $('img').fadeIn();
+            });
+
+            $('#hide').click(function(){
+                $('img').fadeOut();
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>jQuery - Disappearing Brownies</h1>
+        </div>
+        <div class="top">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+        </div>
+        <div class="bottom">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+            <img src="Dog.png" alt="browns">
+        </div>
+        <div class="text">
+            <h4>Click the logos to make them disappear individually, or click 'Hide All' to remove them all from view</h4>
+            <h4>'Show All' Brings them back</h4>
+        </div>
+        <div class="footer">
+            <button id="hide">
+                Hide All
+            </button>
+            <button id="show">
+                Show All
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
