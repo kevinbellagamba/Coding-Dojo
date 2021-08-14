@@ -1,0 +1,47 @@
+#1
+Prediction:1,2,3,4,5,6,7,8,9
+Output:1,2,3,4,5,6,7,8,9
+
+#2
+Prediction:1,4,7
+Output:1,4,7
+
+#3
+Prediction:0,1,2,"y is 3", 4
+Output:0,1,2,3,4
+
+#4
+Prediction:20,17,14,11,8,5,2
+Output:20,17,14,11,8,5,2
+
+#5
+Prediction:London,Paris,Tokyo
+Output:London,Paris,Tokyo
+
+#6
+Prediction:0,7,1,13,2,8,3,42,"The answer to life, the universe, and everything."
+Output:0,7,1,13,2,8,3,42,"The answer to life, the universe, and everything."
+
+#7
+Prediction:0,1,"Hello",3,"Hello",5,"Hello",7,"Hello",9
+Output:"Hello",1,"Hello",3,"Hello",5,"Hello",7,"Hello",9
+
+#8
+Prediction:"Hello",1,"World",3,"Hello",5,"World",7,"Hello",9
+Output:"Hello",1,"World",3,"Hello",5,"World",7,"Hello",9
+
+#9
+Prediction: Name, Fido, age, 4, trick, rolls over
+Output: Name, Fido, age, 4, trick, rolls over
+
+#10
+Prediction:
+First, I will use the 20 minute rule and use the platform and other resources to find my answer",
+Second, I will ask my classmates for help, like how I would ask a fellow employee at my job",
+Third, I will ask an available TA in a public setting, so everyone can benefit from my question",
+Fourth, I will ask an available instructor
+Output:
+First, I will use the 20 minute rule and use the platform and other resources to find my answer",
+Second, I will ask my classmates for help, like how I would ask a fellow employee at my job",
+Third, I will ask an available TA in a public setting, so everyone can benefit from my question",
+Fourth, I will ask an available instructor
