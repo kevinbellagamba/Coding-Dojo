@@ -7,6 +7,7 @@ Adding some coursework from my Coding Dojo Bootcamp experience
 * jQuery
 * Git
 * Bootstrap
+* API
 
 ## Python Stack
 * Python
