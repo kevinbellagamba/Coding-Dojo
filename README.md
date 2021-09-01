@@ -12,4 +12,5 @@ Adding some coursework from my Coding Dojo Bootcamp experience
 * Python
 * MySQL
 * Django
+* Django ORM
 * Flask
