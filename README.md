@@ -9,7 +9,6 @@ Adding some coursework from my Coding Dojo Bootcamp experience
 * Bootstrap
 * API
 
-
 ## Python Stack
 * Python
 * MySQL
