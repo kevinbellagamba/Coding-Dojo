@@ -13,6 +13,7 @@ var users = [
         }
     ];
 
+
 // 1. Print John's age 
 console.log(users[1].age);
 
