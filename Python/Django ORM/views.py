@@ -29,7 +29,6 @@ def index(request):
 
 
 
-
 def make_data(request):
 	team_maker.gen_leagues(10)
 	team_maker.gen_teams(50)
