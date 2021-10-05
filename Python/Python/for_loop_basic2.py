@@ -1,7 +1,6 @@
 #1
 from functions_basic2 import nums
 
-
 def big(nums_list):
     for i in range(len(nums_list)):
         if nums_list[i] > 0:
